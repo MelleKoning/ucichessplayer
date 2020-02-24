@@ -1,6 +1,7 @@
 ## Introduction
 
-ucichessplayer is a go library which provides a common uci engine on top of the notnil/chess library, to support uci communication to chess engines via golang.
+ucichessplayer is a go library which provides a common uci engine interface on top of the notnil/chess library.
+This is not a chess engine itself but it supports uci communication to chess engines via golang.
 
 ## Installation
 
@@ -18,7 +19,8 @@ There is no actual code written to setup chess engines, but there is an example 
 
 #### Example interaction
 
-Example interaction with the ucichessplayer as per the example test:
+Example interaction with the ucichessplayer as per the example test.
+Note: you need to have a chess engine installed that can be run via the golang Run command, see code below.
 
 ```go
 var logger *log.Logger = log.New(stdout, "", log.LstdFlags)
